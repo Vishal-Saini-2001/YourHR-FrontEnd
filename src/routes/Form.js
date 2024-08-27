@@ -29,7 +29,7 @@ const Form = () => {
         alert(res.data);
         if(res.status==200)navigate('/users');
       })
-      .catch(err=>alert(err.response.data.msg))
+      .catch(err=>alert(err))
   };
 
   return (
