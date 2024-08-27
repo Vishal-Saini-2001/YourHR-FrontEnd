@@ -9,7 +9,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/users');
+        const response = await axios.get('https://yourhr-backend-9kv9.onrender.com/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users', error);
@@ -30,7 +30,7 @@ const Users = () => {
             <p>Email: {user.email}</p>
             <div style={{ width: '100%', height: '300px', overflow: 'auto' }}>
               <iframe
-                src={`http://localhost:8080/${user.pdfFilePath}`}
+                src={`https://yourhr-backend-9kv9.onrender.com/${user.pdfFilePath}`}
                 width="100%"
                 height="100%"
                 style={{ border: 'none' }}

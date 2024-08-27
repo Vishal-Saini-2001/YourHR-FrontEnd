@@ -20,7 +20,7 @@ const Form = () => {
     formData.append('email', email);
     formData.append('pdf', pdf);
 
-    await axios.post('http://localhost:8080/upload', formData, {
+    await axios.post('https://yourhr-backend-9kv9.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },
